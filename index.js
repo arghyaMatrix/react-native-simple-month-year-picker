@@ -25,7 +25,7 @@ const MonthYearPicker = (props) => {
     useEffect(() => {
         props.onChangeYear(year)
         props.onChangeMonth(month_data[new Date().getMonth()])
-    })
+    }, [])
 
     return (
         <Modal
